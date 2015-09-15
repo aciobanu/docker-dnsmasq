@@ -19,7 +19,7 @@ By default, the container starts dnsmasq with
 
 To overwrite the default behavior, just pass the container with the desired dnsmasq parameters, for example
 ```
-docker run aciobanu/dnsmasq --keep-in-foreground --dns-loop-detect --no-negcache
+docker run --cap-add=NET_ADMIN aciobanu/dnsmasq --keep-in-foreground --dns-loop-detect --no-negcache
 ```
 
 For a full list of dnsmasq goodies, see the dnsmasq help
