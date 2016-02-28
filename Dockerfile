@@ -1,4 +1,4 @@
-FROM alpine:3.2
+FROM alpine:latest
 
 RUN apk -U add dnsmasq inotify-tools && rm -rf /var/cache/apk/*
 
