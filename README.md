@@ -1,5 +1,6 @@
 # Dnsmasq
 [Docker][docker] image providing [dnsmasq][dnsmasq] service that reacts to your complex docker environments changes. In a complex docker environment managed with [docker-compose][docker-compose], or similar, the communication between continers is ensured by linking the containers; with dnsmasq the communication can be ensured by using the DNS service it provides allowing you to run specific components, without the hard dependencies of the links. The container reacts and updates the dnsmasq service whenever containers are added or removed from the environment. All in under 6 MB of disk space.
+[![](https://badge.imagelayers.io/aciobanu/dnsmasq:latest.svg)](https://imagelayers.io/?images=aciobanu/dnsmasq:latest 'Get your own badge on imagelayers.io')
 
 # Usage
 Dnsmasq requires running the Docker container with NET_ADMIN capability otherwise it will silently fail.
